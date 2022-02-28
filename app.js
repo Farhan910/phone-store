@@ -17,13 +17,14 @@ const displayData = (phones) =>{
        console.log(phone);
        const div = document.createElement('div')
        div.classList.add('col-lg-4')
+       div.classList.add('col-12')
        div.innerHTML = `
-       <div class="card mt-5 border-light " style="width: 18rem;">
+       <div class="card mt-5 border-light  " style="width: 18rem;">
         <img src="${phone.image}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${phone.phone_name}</h5>
           <p class="card-text">${phone.brand}</p>
-          <a href="#" class="btn btn-success">Details</a>
+          <a href="#" onclick="details()" class="btn btn-success">Details</a>
         </div>
       </div>
        `
@@ -31,4 +32,12 @@ const displayData = (phones) =>{
        main.appendChild(div)
 
    })
+}
+
+const details = () =>{
+
+  const url = `
+  https://openapi.programming-hero.com/api/phone/${}
+  `
+
 }
