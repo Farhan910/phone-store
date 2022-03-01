@@ -73,13 +73,22 @@ const displayDetails = (details) => {
     </div>
     
       <div class="card-body">
-        <h5  class="card-title">${details.name}</h5>
+      
+        <h2  class="card-title">${details.name}</h2>
+        <h5 class="allName">Main features : </h5>
         <p  class="card-text"> <span class="allName"> Display size :</span> <span class="text">${details.mainFeatures.displaySize}</span></p>
         <p  class="card-text"> <span class="allName">Release date : </span><span class="text">${details.releaseDate}</span></p>
-        <p  class="card-text"><span class="allName">Chip set: </span><span class="text">${details.mainFeatures.chipSet}</span></p>
-        <p  class="card-text"><span class="allName">Storage: </span><span class="text">${details.mainFeatures.storage}</span></p>
+        <p  class="card-text"><span class="allName">Chip set : </span><span class="text">${details.mainFeatures.chipSet}</span></p>
+        <p  class="card-text"><span class="allName">Storage : </span><span class="text">${details.mainFeatures.storage}</span></p>
         <p  class="card-text"><span class="allName">Memory : </span><span class="text">${details.mainFeatures.memory}</span></p>
         <p  class="card-text"><span class="allName">Sensors : </span><span class="text">${details.mainFeatures.sensors}</span> </p>
+        <h5 class="allName">Others : </h5>
+        <p  class="card-text"><span class="allName">Bluetooth : </span><span class="text">${details.others.Bluetooth}</span></p>
+        <p  class="card-text"><span class="allName">GPS : </span><span class="text">${details.others.GPS}</span></p>
+        <p  class="card-text"><span class="allName">NFC : </span><span class="text">${details.others.NFC}</span></p>
+        <p  class="card-text"><span class="allName">Radio : </span><span class="text">${details.others.Radio}</span></p>
+        <p  class="card-text"><span class="allName">USB : </span><span class="text">${details.others.USB}</span></p>
+        <p  class="card-text"><span class="allName">WLAN : </span><span class="text">${details.others.WLAN}</span></p>
       </div>
     
 
@@ -94,13 +103,21 @@ const displayDetails = (details) => {
     </div>
     
     <div class="card-body">
-        <h5  class="card-title">${details.name}</h5>
+        <h3  class="card-title">${details.name}</h3>
+        <h5>Main features : </h5>
         <p  class="card-text"> <span class="allName"> Display size :</span> <span class="text">${details.mainFeatures.displaySize}</span></p>
         <p  class="card-text"> <span class="allName">Release date : </span><span class="text" id="release">This phone has no release date</span></p>
-        <p  class="card-text"><span class="allName">Chip set: </span><span class="text">${details.mainFeatures.chipSet}</span></p>
-        <p  class="card-text"><span class="allName">Storage: </span><span class="text">${details.mainFeatures.storage}</span></p>
+        <p  class="card-text"><span class="allName">Chip set : </span><span class="text">${details.mainFeatures.chipSet}</span></p>
+        <p  class="card-text"><span class="allName">Storage : </span><span class="text">${details.mainFeatures.storage}</span></p>
         <p  class="card-text"><span class="allName">Memory : </span><span class="text">${details.mainFeatures.memory}</span></p>
         <p  class="card-text"><span class="allName">Sensors : </span><span class="text">${details.mainFeatures.sensors}</span> </p>
+        <h5 class="allName">Others : </h5>
+        <p  class="card-text"><span class="allName">Bluetooth : </span><span class="text">${details.others.Bluetooth}</span></p>
+        <p  class="card-text"><span class="allName">GPS : </span><span class="text">${details.others.GPS}</span></p>
+        <p  class="card-text"><span class="allName">NFC : </span><span class="text">${details.others.NFC}</span></p>
+        <p  class="card-text"><span class="allName">Radio : </span><span class="text">${details.others.Radio}</span></p>
+        <p  class="card-text"><span class="allName">USB : </span><span class="text">${details.others.USB}</span></p>
+        <p  class="card-text"><span class="allName">WLAN : </span><span class="text">${details.others.WLAN}</span></p>
       </div>
     
 
