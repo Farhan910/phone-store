@@ -1,16 +1,24 @@
+document.getElementById("error-msg").style.display ="none"
 const searching = () => {
-  const searchBox = document.getElementById("search-box").value;
+  const searchBox = document.getElementById("search-box");
+  const searchInput = searchBox.value
+  searchInput.value = "";
   
-  document.getElementById("search-box").value = "";
   
-  const url = `https://openapi.programming-hero.com/api/phones?search=${searchBox}`;
+
+  const url = `https://openapi.programming-hero.com/api/phones?search=${searchInput}`;
   fetch(url)
     .then((response) => response.json())
-    .then((data) => displayData(data.data));
-    
+    .then((data) => displayData(data.data))
+  
 };
 
+
+
 const displayData = (phones) => {
+ if (phones.length == 0){
+    document.getElementById("error-msg").style.display ="block"
+  }
   const phone20 = phones.slice(0, 20);
   const main = document.getElementById("main");
   document.getElementById("main").innerHTML = "";
@@ -22,11 +30,11 @@ const displayData = (phones) => {
     div.classList.add("col-12");
     div.innerHTML = `
        <div class="card mt-5 border-light  " style="width: 18rem;">
-        <img src="${phone.image}" class="card-img-top" alt="...">
+        <img src="${phone.image}" class="card-img-top card-image " alt="...">
         <div class="card-body">
-          <h5 class="card-title">${phone.phone_name}</h5>
-          <p class="card-text text">${phone.brand}</p>
-          <a href="#" onclick="details('${phone.slug}')" class="btn btn-success">Details</a>
+          <h5 class="card-title text-center">${phone.phone_name}</h5>
+          <p class="card-text text-center text">${phone.brand}</p>
+          <a href="#" onclick="details('${phone.slug}')" class="btn btn-success button text-center w-100">Details</a>
         </div>
       </div>
        `;

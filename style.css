@@ -1,20 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-body{
-    font-family:'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
+  background: rgb(92, 203, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 203, 217, 1) 12%,
+    rgba(51, 38, 163, 1) 72%
+  );
 }
-#release{
-    color: #FF7BA9;
+#release {
+  color: #ff7ba9;
 }
 
-.text{
-    font-weight: 700;
+.text {
+  font-weight: 700;
 }
 
-.card-title{
-    font-weight: 700;
+.card-title {
+  font-weight: 700;
 }
-.allName{
-    color: navy;
-    font-weight: 700;
+.allName {
+  color: navy;
+  font-weight: 700;
+}
+.card {
+  border-radius: 15px;
+}
+.card-image {
+  border-radius: 15px;
+}
+.button{
+    background: rgb(12, 52, 126) 72%;
+  
 }
