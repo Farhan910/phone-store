@@ -5,55 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phones</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ab45369d60.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navber-fixed">
-        <div class="container-fluid container">
-          <a class="navbar-brand text-black" href="#"><i class="fa-brands fa-apple"></i>iPhone</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-            <div class="d-flex ms-auto">
-              <input id="search-box" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button onclick="searching()" class="btn btn-success" type="submit">Search</button>
+    <nav class="navbar navbar-expand-lg navbar-light navber-fixed">
+      <div class="container-fluid container">
+        <a class="navbar-brand text-black text-white" href="#">iPhone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ms-auto">
+            <!-- <input
+              id="search-box"
+              class="form-control me-2"
+              
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button href="#"  onclick="searching()" class="btn " type="submit">
+              Search
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="carousel">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="image/iphone-13-og-2021.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/602-samsung-galaxy-s21-ultra-details.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/iphone__btp62hy2cbea_og.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
           </div>
         </div>
-      </nav>
-
-      <div id="details-main" >
-
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </section>
 
-      <div id="main" class=" row container mx-lg-auto">
+    <input
+      id="search-box"
+      class="w-50 form-control mx-auto"
+      placeholder="Search"
+      aria-label="Search"
+    />
+    <button  onclick="searching()" class="btn-search btn d-flex mx-auto mt-3 " type="submit">
+      Search
+    </button>
 
-      </div>
+    <div id="details-main"></div>
 
-    
+    <div id="main" class="row container mx-lg-auto"></div>
 
-      <div>
-        <h2 id="error-msg" class="text-danger text-center fw-bold mt-3">Something went wrong, no result found .</h2>
-      </div>
+    <div>
+      <h2 id="error-msg" class="text-danger text-center fw-bold mt-3">
+        Something went wrong, no result found .
+      </h2>
+    </div>
 
-      
-
-      
-
-
-      
-
-
-      <footer>
-        
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <footer><p id="foot" class="footer">all rights reserved.</p></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="/app.js"></script>
   </body>
 </html>

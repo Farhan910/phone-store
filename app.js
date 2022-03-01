@@ -2,7 +2,7 @@ document.getElementById("error-msg").style.display ="none"
 const searching = () => {
   const searchBox = document.getElementById("search-box");
   const searchInput = searchBox.value
-  searchInput.value = "";
+  
   
   
 
@@ -21,8 +21,10 @@ const displayData = (phones) => {
   }
   const phone20 = phones.slice(0, 20);
   const main = document.getElementById("main");
+  document.getElementById('foot').style.display="block"
   document.getElementById("main").innerHTML = "";
   document.getElementById("details-main").innerHTML = "";
+  document.getElementById('search-box').value = "";
   phone20.forEach((phone) => {
     console.log(phone);
     const div = document.createElement("div");
