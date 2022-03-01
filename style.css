@@ -2,5 +2,19 @@
 
 body{
     font-family:'Lato', sans-serif;
-    background-color:#FF7BA9;
+}
+#release{
+    color: #FF7BA9;
+}
+
+.text{
+    font-weight: 700;
+}
+
+.card-title{
+    font-weight: 700;
+}
+.allName{
+    color: navy;
+    font-weight: 700;
 }
