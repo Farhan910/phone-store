@@ -28,27 +28,30 @@ body {
 }
 .card {
   border-radius: 15px;
+  box-shadow: 30px 20px 30px black;
 }
 .card-image {
   border-radius: 15px;
+  padding: 15px;
 }
 .button {
   background: rgb(87, 98, 199);
 }
-.footer{
+.footer-style{
     color: rgb(48, 57, 139);
     background-color: rgb(20, 18, 18);
     /* text-align: center; */
     margin-bottom: 0;
-    align-items: center;
     display:none;
-    height: 150px;
+    height: 300px;
     margin-top: 100px;
     
 }
 footer p{
     text-align: center;
+    align-items: center;
     margin-top: 100px;
+    padding: 140px;
 }
 .carousel{
     margin-bottom: 100px;
@@ -60,4 +63,9 @@ footer p{
     color: white;
     background: rgb(87, 98, 199);
     margin-bottom: 100px;
+}
+.gif{
+    margin-left: 560px;
+    border-radius: 10px;
+    display: none;
 }

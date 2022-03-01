@@ -10,15 +10,19 @@ const searching = () => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => displayData(data.data))
+    
   
 };
 
 
 
 const displayData = (phones) => {
+  console.log(phones);
  if (phones.length == 0){
     document.getElementById("error-msg").style.display ="block"
+    document.getElementById('gif').style.display = 'block'
   }
+
   const phone20 = phones.slice(0, 20);
   const main = document.getElementById("main");
   document.getElementById('foot').style.display="block"

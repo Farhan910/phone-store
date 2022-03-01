@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light navber-fixed">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid container">
-        <a class="navbar-brand text-black text-white" href="#">iPhone</a>
-        <button
+        <a class="navbar-brand text-black text-white" href="#">iPhone Store</a>
+        
+        
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -27,9 +29,23 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex ms-auto">
+          <div class="d-flex ms-auto ">
+            <ul class="navbar-nav mx-5  ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class=" text-white me-4 nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="text-white me-4  nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-white me-4  nav-link active" aria-current="page" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="text-white  nav-link active" aria-current="page" href="#">Help</a>
+              </li>
+            </ul>
             <!-- <input
               id="search-box"
               class="form-control me-2"
@@ -80,10 +96,10 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+              <h3 class=" fw-bold">The latest Phone of apple <br>Iphone 13 pro max </h3>
+              <h6>128GB 6GB RAM, 256GB 6GB RAM, 512GB 6GB RAM, 1TB 6GB RAM</h6>
+              <p>Released 2021, September 24</p>
+              
             </div>
           </div>
           <div class="carousel-item">
@@ -92,11 +108,13 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+            <div class="carousel-caption  d-none d-md-block">
+              <h3 class="fw-bold">Galaxy A52s 5G</h3>
+              <h5 class="fw-bold">The most soled samsung phone</h5>
               <p>
-                Some representative placeholder content for the second slide.
+                128GB 4GB RAM, 128GB 6GB RAM, <br> 128GB 8GB RAM, 256GB 6GB RAM, 256GB 8GB RAM
               </p>
+              <p>Released 2021, September 01</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -105,10 +123,11 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+            <div class="carousel-caption text-black  d-none d-md-block">
+              <h3 class="fw-bold">Iphone 13 mini </h3>
+              <h5 class="fw-bold">128GB 4GB RAM, 256GB 4GB RAM, 512GB 4GB RAM</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                Released 2021, September 24
               </p>
             </div>
           </div>
@@ -140,21 +159,25 @@
       placeholder="Search"
       aria-label="Search"
     />
-    <button  onclick="searching()" class="btn-search btn d-flex mx-auto mt-3 " type="submit">
+    <button href="#" onclick="searching()" class="btn-search btn d-flex mx-auto mt-3 " type="submit">
       Search
     </button>
+
+    
 
     <div id="details-main"></div>
 
     <div id="main" class="row container mx-lg-auto"></div>
 
     <div>
-      <h2 id="error-msg" class="text-danger text-center fw-bold mt-3">
+      <img id="gif" class="w-25 gif mt-5 " src="image/Social_dino-with-hat.gif" alt="">
+      <h2 id="error-msg" class="text-danger text-center fw-bold mt-5">
         Something went wrong, no result found .
       </h2>
     </div>
 
-    <footer><p id="foot" class="footer">all rights reserved.</p></footer>
+    <footer><p id="foot" class="footer-style">@Copyright 2022 by Farhan Faruk. All Rights Reserved.</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
