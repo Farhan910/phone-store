@@ -68,11 +68,10 @@ const details = (id) => {
 };
 
 const displayDetails = (details) => {
-  console.log(details);
   const detailsMain = document.getElementById("details-main");
   document.getElementById("details-main").innerHTML = "";
   const div = document.createElement("div");
-
+console.log(details);
   div.innerHTML = `
   <div class="card mb-3 mt-3 container border-light" style="max-width: 540px;">
   
