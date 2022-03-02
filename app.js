@@ -101,6 +101,7 @@ const displayDetails = (details) => {
 
  </div>
   `;
+  
   if (details.releaseDate == "") {
     div.innerHTML = `
    <div  class="card mb-3 mt-3 container border-light" style="max-width: 540px;">
