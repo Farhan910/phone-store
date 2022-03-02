@@ -18,11 +18,12 @@ const searching = () => {
 
 const displayData = (phones) => {
   console.log(phones);
- if (phones.length == 0){
+ if (phones.length == 0 ){
     document.getElementById("error-msg").style.display ="block"
     document.getElementById('gif').style.display = 'block'
     document.getElementById("main").innerHTML = "";
     document.getElementById("details-main").innerHTML = "";
+    document.getElementById('search-box').value = "";
   }
   else{
     const phone20 = phones.slice(0, 20);
