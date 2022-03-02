@@ -21,32 +21,39 @@ const displayData = (phones) => {
  if (phones.length == 0){
     document.getElementById("error-msg").style.display ="block"
     document.getElementById('gif').style.display = 'block'
+    document.getElementById("main").innerHTML = "";
+    document.getElementById("details-main").innerHTML = "";
+  }
+  else{
+    const phone20 = phones.slice(0, 20);
+    const main = document.getElementById("main");
+    document.getElementById('foot').style.display="block"
+    document.getElementById("error-msg").style.display ="none"
+    document.getElementById('gif').style.display = 'none'
+    document.getElementById("main").innerHTML = "";
+    document.getElementById("details-main").innerHTML = "";
+    document.getElementById('search-box').value = "";
+    phone20.forEach((phone) => {
+      console.log(phone);
+      const div = document.createElement("div");
+      div.classList.add("col-lg-4");
+      div.classList.add("col-12");
+      div.innerHTML = `
+         <div class="card mt-5 border-light  " style="width: 18rem;">
+          <img src="${phone.image}" class="card-img-top card-image " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">${phone.phone_name}</h5>
+            <p class="card-text text-center text">${phone.brand}</p>
+            <a href="#" onclick="details('${phone.slug}')" class="btn btn-success button text-center w-100">Details</a>
+          </div>
+        </div>
+         `;
+  
+      main.appendChild(div);
+    });
   }
 
-  const phone20 = phones.slice(0, 20);
-  const main = document.getElementById("main");
-  document.getElementById('foot').style.display="block"
-  document.getElementById("main").innerHTML = "";
-  document.getElementById("details-main").innerHTML = "";
-  document.getElementById('search-box').value = "";
-  phone20.forEach((phone) => {
-    console.log(phone);
-    const div = document.createElement("div");
-    div.classList.add("col-lg-4");
-    div.classList.add("col-12");
-    div.innerHTML = `
-       <div class="card mt-5 border-light  " style="width: 18rem;">
-        <img src="${phone.image}" class="card-img-top card-image " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">${phone.phone_name}</h5>
-          <p class="card-text text-center text">${phone.brand}</p>
-          <a href="#" onclick="details('${phone.slug}')" class="btn btn-success button text-center w-100">Details</a>
-        </div>
-      </div>
-       `;
-
-    main.appendChild(div);
-  });
+  
 };
 
 

@@ -65,7 +65,10 @@ footer p{
     margin-bottom: 100px;
 }
 .gif{
-    margin-left: 560px;
+    height: 220px;
+    width: 500px;
     border-radius: 10px;
     display: none;
+    
+
 }
