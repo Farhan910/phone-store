@@ -39,7 +39,7 @@ const displayData = (phones) => {
       div.classList.add("col-lg-4");
       div.classList.add("col-12");
       div.innerHTML = `
-         <div class="card mt-5 border-light  " style="width: 18rem;">
+         <div class="card mt-5 mx-auto me-0 me-lg-5  border-light  " style="width: 18rem;">
           <img src="${phone.image}" class="card-img-top card-image " alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">${phone.phone_name}</h5>
